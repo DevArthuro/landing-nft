@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+$base: (
+  font-family: "Inter" sans-serif,
+);
+
+$colors: (
+  --orange: #ff8139,
+  --pink: #ff3998,
+  --green: #39ffa0,
+  --red: #ff3939,
+  --light-green: #edfff6,
+  --light-orange: #fff0a8,
+  --accent-color1: #fff,
+  --accent-color2: #555,
+  --accent-color3: #ccc,
+  --card-color: #000,
+  --background: #111,
+);
+
+[data-theme="light"] {
+  --background: #fff;
+  --accent-color1: #000;
+  --accent-color2: #eee;
+  --accent-color3: #777;
+  --card-color: #eee;
+}
