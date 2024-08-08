@@ -1,0 +1,45 @@
+@use "../base/variables" as *;
+
+.card {
+  background-color: map-get($colors, --card-color);
+  width: max-content;
+  border-radius: 1rem;
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    .card-heading {
+      display: flex;
+      justify-content: space-between;
+      .card-series {
+        color: map-get($colors, --orange);
+        text-transform: uppercase;
+        font-size: 0.7rem;
+      }
+      .card-top {
+        color: map-get($colors, --accent-color3);
+        text-transform: uppercase;
+        font-size: 0.7rem;
+      }
+    }
+    .card-details {
+      display: flex;
+      justify-content: space-between;
+      color: map-get($colors, --accent-color1);
+      font-weight: bold;
+      .card-price {
+        display: flex;
+        gap: 16px;
+      }
+    }
+    .card-sub-details {
+      display: flex;
+      justify-content: space-between;
+      span {
+        color: map-get($colors, --accent-color3);
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
