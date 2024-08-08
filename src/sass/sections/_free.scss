@@ -1,0 +1,48 @@
+@use "../base/variables" as *;
+
+.free {
+  position: relative;
+  margin-top: 5rem;
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 25rem;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 1;
+    background-color: map-get($colors, --orange);
+    .background {
+      z-index: -1;
+      .ellipse {
+        position: absolute;
+        height: 100%;
+        width: 420px;
+        border-radius: 100%;
+        filter: blur(100px);
+      }
+      .pink {
+        background-color: map-get($colors, --pink);
+        top: -10%;
+        left: -15%;
+      }
+      .green {
+        background-color: map-get($colors, --green);
+        top: -10%;
+        right: -15%;
+      }
+    }
+    .content {
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding-top: 45px;
+      padding-left: 75px;
+      font-size: 1.3rem;
+      .title {
+        font-size: 2rem;
+      }
+    }
+  }
+}
