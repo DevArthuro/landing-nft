@@ -2,16 +2,13 @@
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
   scroll-behavior: smooth;
   font-family: map-get($base, font-family);
-}
-
-body {
-  padding: 0;
-  margin: 0;
 }
 
 .app-container {
