@@ -13,6 +13,8 @@ html {
 
 .app-container {
   background-color: map-get($colors, --background);
+  display: grid;
+  place-content: center;
   overflow: hidden;
   transition: 0.5s ease-in-out;
   padding: 2rem 4rem;
@@ -21,6 +23,9 @@ html {
     &::-webkit-scrollbar {
       display: none;
     }
+  }
+  .content-app {
+    max-width: 1250px;
   }
 }
 

@@ -12,16 +12,18 @@ import SuperRare from "./components/SuperRare";
 function App() {
   return (
     <div className="app-container">
-      <ScrollToTop />
-      <Navbar />
-      <Home />
-      <Free />
-      <Clients />
-      <SuperRare />
-      <Release />
-      <Like />
-      <Signup />
-      <Footer />
+      <div className="content-app">
+        <ScrollToTop />
+        <Navbar />
+        <Home />
+        <Free />
+        <Clients />
+        <SuperRare />
+        <Release />
+        <Like />
+        <Signup />
+        <Footer />
+      </div>
     </div>
   );
 }

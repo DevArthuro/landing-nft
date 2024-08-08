@@ -1,5 +1,5 @@
 const ScrollToTop = () => {
-  return <div>ScrollToTop</div>;
+  return <div></div>;
 };
 
 export default ScrollToTop;
