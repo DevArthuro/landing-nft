@@ -372,6 +372,83 @@ nav .links-container .links li:last-of-type a {
 .releases .green {
   background-color: #39ffa0;
 }
+.signup {
+  padding-top: 64px;
+  overflow: hidden;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+.signup .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1.3rem;
+}
+.signup .container .content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+}
+.signup .container .content .sub-title {
+  color: #ff3998;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.signup .container .content .title {
+  color: #fff;
+}
+.signup .container .content .description {
+  color: #ccc;
+}
+.signup .container .content button {
+  color: #fff;
+  background-color: #111;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  border: solid 3px rgba(0, 0, 0, 0);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #ff3998, #ff8139);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #111 inset;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.signup .container .content button:hover {
+  box-shadow: none;
+}
+.signup .container .image-container {
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.signup .container .image-container .image {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.signup .container .image-container .ellipse-container .ellipse {
+  z-index: -1;
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  filter: blur(100px);
+}
+.signup .container .image-container .ellipse-container .pink {
+  background-color: #ff3998;
+  top: 40%;
+  right: 40%;
+}
+.signup .container .image-container .ellipse-container .orange {
+  background-color: #ff8139;
+  bottom: 40%;
+  left: 40%;
+}
 .super-rare {
   display: flex;
   flex-direction: column;
