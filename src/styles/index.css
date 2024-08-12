@@ -85,6 +85,53 @@ html {
   color: #ccc;
   font-size: 0.9rem;
 }
+footer {
+  margin: 96px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+footer .upper {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+footer .upper .brand-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .upper .brand-container ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+footer .upper .links {
+  display: flex;
+  gap: 128px;
+}
+footer .upper .links .link {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+footer .upper .links .link h4 {
+  color: #fff;
+  text-transform: uppercase;
+}
+footer .upper .links .link ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer .lower {
+  display: flex;
+  justify-content: space-between;
+}
+footer .lower span {
+  color: #ccc;
+}
 nav {
   display: flex;
   justify-content: space-between;

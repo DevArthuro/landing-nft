@@ -1,0 +1,49 @@
+@use "../base/variables" as *;
+
+footer {
+  margin: 96px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  .upper {
+    display: flex;
+    justify-content: space-between;
+    color: map-get($colors, --accent-color1);
+    .brand-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 16px;
+      }
+    }
+    .links {
+      display: flex;
+      gap: 128px;
+      .link {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        h4 {
+          color: map-get($colors, --accent-color1);
+          text-transform: uppercase;
+        }
+        ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+        }
+      }
+    }
+  }
+  .lower {
+    display: flex;
+    justify-content: space-between;
+    span {
+      color: map-get($colors, --accent-color3);
+    }
+  }
+}
