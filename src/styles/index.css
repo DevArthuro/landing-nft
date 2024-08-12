@@ -260,6 +260,30 @@ nav .links-container .links li:last-of-type a {
   bottom: 40%;
   left: 40%;
 }
+.like {
+  margin: 5rem 0;
+}
+.like .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.like .container .content {
+  background-color: #555;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 48px;
+  border-radius: 32px;
+}
+.like .container .content .title {
+  color: #fff;
+}
+.like .container .content .description {
+  color: #ccc;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+}
 .releases {
   margin: 60px;
   display: flex;

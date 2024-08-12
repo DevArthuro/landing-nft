@@ -1,0 +1,26 @@
+@use "../base/variables" as *;
+
+.like {
+  margin: 5rem 0;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    .content {
+      background-color: map-get($colors, --accent-color2);
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      padding: 48px;
+      border-radius: 32px;
+      .title {
+        color: map-get($colors, --accent-color1);
+      }
+      .description {
+        color: map-get($colors, --accent-color3);
+        letter-spacing: 0.1rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
