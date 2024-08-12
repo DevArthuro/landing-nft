@@ -1,0 +1,90 @@
+@use "../base/variables" as *;
+
+.releases {
+  margin: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  .release {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    .content {
+      padding: 80px 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      .title {
+        font-size: 2rem;
+      }
+      .description {
+        font-size: 1.3rem;
+        a {
+          color: black;
+          font-weight: bold;
+        }
+      }
+      .link {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        svg {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .image {
+      position: relative;
+      overflow: hidden;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      img {
+        height: 24rem;
+      }
+      .ellipse {
+        z-index: -1;
+        position: absolute;
+        height: 320px;
+        width: 320px;
+        filter: blur(100px);
+        bottom: -40%;
+        right: 0;
+      }
+      .pink {
+        background-color: map-get($colors, --pink);
+      }
+    }
+    .card-container {
+      overflow: hidden;
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .ellipse {
+        z-index: -1;
+        position: absolute;
+        height: 320px;
+        width: 320px;
+        filter: blur(100px);
+        bottom: -45%;
+        left: 0;
+      }
+      .orange {
+        background-color: map-get($colors, --orange);
+      }
+    }
+  }
+  .orange {
+    background-color: map-get($colors, --orange);
+  }
+  .green {
+    background-color: map-get($colors, --green);
+  }
+}

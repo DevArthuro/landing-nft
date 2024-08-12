@@ -260,6 +260,94 @@ nav .links-container .links li:last-of-type a {
   bottom: 40%;
   left: 40%;
 }
+.releases {
+  margin: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.releases .release {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+}
+.releases .release .content {
+  padding: 80px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.releases .release .content .title {
+  font-size: 2rem;
+}
+.releases .release .content .description {
+  font-size: 1.3rem;
+}
+.releases .release .content .description a {
+  color: #000;
+  font-weight: bold;
+}
+.releases .release .content .link {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.releases .release .content .link svg {
+  font-size: 1.5rem;
+}
+.releases .release .image {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.releases .release .image img {
+  height: 24rem;
+}
+.releases .release .image .ellipse {
+  z-index: -1;
+  position: absolute;
+  height: 320px;
+  width: 320px;
+  filter: blur(100px);
+  bottom: -40%;
+  right: 0;
+}
+.releases .release .image .pink {
+  background-color: #ff3998;
+}
+.releases .release .card-container {
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.releases .release .card-container .ellipse {
+  z-index: -1;
+  position: absolute;
+  height: 320px;
+  width: 320px;
+  filter: blur(100px);
+  bottom: -45%;
+  left: 0;
+}
+.releases .release .card-container .orange {
+  background-color: #ff8139;
+}
+.releases .orange {
+  background-color: #ff8139;
+}
+.releases .green {
+  background-color: #39ffa0;
+}
 .super-rare {
   display: flex;
   flex-direction: column;
