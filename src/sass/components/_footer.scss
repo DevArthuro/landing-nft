@@ -1,4 +1,4 @@
-@use "../base/variables" as *;
+@forward "../base/variables";
 
 footer {
   margin: 96px 40px;
@@ -8,7 +8,7 @@ footer {
   .upper {
     display: flex;
     justify-content: space-between;
-    color: map-get($colors, --accent-color1);
+    color: var(--accent-color1);
     .brand-container {
       display: flex;
       flex-direction: column;
@@ -27,7 +27,7 @@ footer {
         flex-direction: column;
         gap: 32px;
         h4 {
-          color: map-get($colors, --accent-color1);
+          color: var(--accent-color1);
           text-transform: uppercase;
         }
         ul {
@@ -43,7 +43,7 @@ footer {
     display: flex;
     justify-content: space-between;
     span {
-      color: map-get($colors, --accent-color3);
+      color: var(--accent-color3);
     }
   }
 }

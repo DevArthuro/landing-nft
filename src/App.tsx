@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import scrollreveal from "scrollreveal";
 import Clients from "./components/Clients";
 import Footer from "./components/Footer";
@@ -12,6 +12,12 @@ import Signup from "./components/Signup";
 import SuperRare from "./components/SuperRare";
 
 function App() {
+  const [theme, setTheme] = useState("dark");
+
+  const changeTheme = () => {
+    theme === "dark" ? setTheme("light") : setTheme("dark");
+  };
+
   useEffect(() => {
     const registerAnimations = () => {
       const sr = scrollreveal({
@@ -21,16 +27,16 @@ function App() {
         reset: false,
       });
       sr.reveal(`.free,.clients,.super-rare,.releases,.like,.signup,footer`, {
-        interval: 500,
+        interval: 200,
       });
     };
     registerAnimations();
   }, []);
   return (
-    <div className="app-container">
+    <div className="app-container" data-theme={theme}>
       <div className="content-app">
         <ScrollToTop />
-        <Navbar />
+        <Navbar theme={theme} changeTheme={changeTheme} />
         <Home />
         <Free />
         <Clients />

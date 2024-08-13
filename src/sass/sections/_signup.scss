@@ -1,4 +1,4 @@
-@use "../base/variables" as *;
+@forward "../base/variables";
 
 .signup {
   padding-top: 64px;
@@ -15,19 +15,19 @@
       gap: 32px;
       align-items: flex-start;
       .sub-title {
-        color: map-get($colors, --pink);
+        color: var(--pink);
         text-transform: uppercase;
         letter-spacing: 0.1rem;
       }
       .title {
-        color: map-get($colors, --accent-color1);
+        color: var(--accent-color1);
       }
       .description {
-        color: map-get($colors, --accent-color3);
+        color: var(--accent-color3);
       }
       button {
-        color: map-get($colors, --accent-color1);
-        background-color: map-get($colors, --background);
+        color: var(--accent-color1);
+        background-color: var(--background);
         font-weight: bold;
         padding: 1rem 3rem;
         border-radius: 2rem;
@@ -36,14 +36,10 @@
             rgba(255, 255, 255, 0),
             rgba(255, 255, 255, 0)
           ),
-          linear-gradient(
-            101deg,
-            map-get($colors, --pink),
-            map-get($colors, --orange)
-          );
+          linear-gradient(101deg, var(--pink), var(--orange));
         background-origin: border-box;
         background-clip: content-box, border-box;
-        box-shadow: 2px 1000px 1px map-get($colors, --background) inset;
+        box-shadow: 2px 1000px 1px var(--background) inset;
         transition: 0.5s ease-in-out;
         cursor: pointer;
         &:hover {
@@ -70,12 +66,12 @@
           filter: blur(100px);
         }
         .pink {
-          background-color: map-get($colors, --pink);
+          background-color: var(--pink);
           top: 40%;
           right: 40%;
         }
         .orange {
-          background-color: map-get($colors, --orange);
+          background-color: var(--orange);
           bottom: 40%;
           left: 40%;
         }

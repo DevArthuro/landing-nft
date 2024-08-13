@@ -4,19 +4,19 @@ $base: (
   font-family: "Inter" sans-serif,
 );
 
-$colors: (
-  --orange: #ff8139,
-  --pink: #ff3998,
-  --green: #39ffa0,
-  --red: #ff3939,
-  --light-green: #edfff6,
-  --light-orange: #fff0a8,
-  --accent-color1: #fff,
-  --accent-color2: #555,
-  --accent-color3: #ccc,
-  --card-color: #000,
-  --background: #111,
-);
+:root {
+  --orange: #ff8139;
+  --pink: #ff3998;
+  --green: #39ffa0;
+  --red: #ff3939;
+  --light-green: #edfff6;
+  --light-orange: #fff0a8;
+  --accent-color1: #fff;
+  --accent-color2: #555;
+  --accent-color3: #ccc;
+  --card-color: #000;
+  --background: #111;
+}
 
 [data-theme="light"] {
   --background: #fff;

@@ -1,4 +1,4 @@
-@use "../base/variables" as *;
+@forward "../base/variables";
 
 .super-rare {
   display: flex;
@@ -9,13 +9,13 @@
     flex-direction: column;
     gap: 16px;
     .title {
-      color: map-get($colors, --accent-color1);
+      color: var(--accent-color1);
       font-size: 2.4rem;
     }
     .description {
-      color: map-get($colors, --accent-color3);
+      color: var(--accent-color3);
       a {
-        color: map-get($colors, --accent-color3);
+        color: var(--accent-color3);
         font-weight: bold;
       }
     }

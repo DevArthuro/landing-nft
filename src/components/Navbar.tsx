@@ -1,7 +1,14 @@
 import { useState } from "react";
 import Logo from "../../public/logo.png";
+import { ImSun } from "react-icons/im";
+import { BsFillMoonFill } from "react-icons/bs";
 
-const Navbar = () => {
+interface Props {
+  theme: string;
+  changeTheme: () => void;
+}
+
+const Navbar: React.FC<Props> = ({ theme, changeTheme }) => {
   const [navState, setNavState] = useState(false);
   return (
     <nav>
@@ -11,7 +18,13 @@ const Navbar = () => {
         </div>
         <div className="toggle-container">
           <div className="toggle"></div>
-          <div className="mode"></div>
+          <div className="mode">
+            {theme === "dark" ? (
+              <ImSun className="light" />
+            ) : (
+              <BsFillMoonFill className="dark" />
+            )}
+          </div>
         </div>
       </div>
       <div className="links-container">
@@ -27,6 +40,13 @@ const Navbar = () => {
           </li>
           <li>
             <a href="#">Sign Up</a>
+          </li>
+          <li onClick={changeTheme}>
+            {theme === "dark" ? (
+              <ImSun className="light" />
+            ) : (
+              <BsFillMoonFill className="dark" />
+            )}
           </li>
         </ul>
       </div>

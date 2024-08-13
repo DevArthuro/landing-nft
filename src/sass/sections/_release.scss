@@ -1,4 +1,4 @@
-@use "../base/variables" as *;
+@forward "../base/variables";
 
 .releases {
   margin: 60px;
@@ -57,7 +57,7 @@
         right: 0;
       }
       .pink {
-        background-color: map-get($colors, --pink);
+        background-color: var(--pink);
       }
     }
     .card-container {
@@ -77,14 +77,14 @@
         left: 0;
       }
       .orange {
-        background-color: map-get($colors, --orange);
+        background-color: var(--orange);
       }
     }
   }
   .orange {
-    background-color: map-get($colors, --orange);
+    background-color: var(--orange);
   }
   .green {
-    background-color: map-get($colors, --green);
+    background-color: var(--green);
   }
 }

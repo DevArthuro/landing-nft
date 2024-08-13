@@ -1,7 +1,7 @@
-@use "../base/variables" as *;
+@forward "../base/variables";
 
 .card {
-  background-color: map-get($colors, --card-color);
+  background-color: var(--card-color);
   width: max-content;
   border-radius: 1rem;
   &-content {
@@ -13,12 +13,12 @@
       display: flex;
       justify-content: space-between;
       .card-series {
-        color: map-get($colors, --orange);
+        color: var(--orange);
         text-transform: uppercase;
         font-size: 0.7rem;
       }
       .card-top {
-        color: map-get($colors, --accent-color3);
+        color: var(--accent-color3);
         text-transform: uppercase;
         font-size: 0.7rem;
       }
@@ -26,7 +26,7 @@
     .card-details {
       display: flex;
       justify-content: space-between;
-      color: map-get($colors, --accent-color1);
+      color: var(--accent-color1);
       font-weight: bold;
       .card-price {
         display: flex;
@@ -37,7 +37,7 @@
       display: flex;
       justify-content: space-between;
       span {
-        color: map-get($colors, --accent-color3);
+        color: var(--accent-color3);
         font-size: 0.9rem;
       }
     }

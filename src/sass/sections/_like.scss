@@ -1,4 +1,4 @@
-@use "../base/variables" as *;
+@forward "../base/variables";
 
 .like {
   margin: 5rem 0;
@@ -7,17 +7,17 @@
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     .content {
-      background-color: map-get($colors, --accent-color2);
+      background-color: var(--accent-color2);
       display: flex;
       flex-direction: column;
       gap: 32px;
       padding: 48px;
       border-radius: 32px;
       .title {
-        color: map-get($colors, --accent-color1);
+        color: var(--accent-color1);
       }
       .description {
-        color: map-get($colors, --accent-color3);
+        color: var(--accent-color3);
         letter-spacing: 0.1rem;
         line-height: 1.5rem;
       }
