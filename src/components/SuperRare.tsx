@@ -50,17 +50,15 @@ const SuperRare = () => {
       </div>
       <div className="cards">
         {data.map(({ image, series, title, price, tag, time }, index) => (
-          <>
-            <Card
-              image={image}
-              series={series}
-              title={title}
-              price={price}
-              tag={tag}
-              time={time}
-              key={`${title}-${index}`}
-            />
-          </>
+          <Card
+            image={image}
+            series={series}
+            title={title}
+            price={price}
+            tag={tag}
+            time={time}
+            key={`${title}-${index}`}
+          />
         ))}
       </div>
     </div>

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Logo from "../../public/logo.png";
 import { ImSun } from "react-icons/im";
 import { BsFillMoonFill } from "react-icons/bs";
@@ -9,7 +8,6 @@ interface Props {
 }
 
 const Navbar: React.FC<Props> = ({ theme, changeTheme }) => {
-  const [navState, setNavState] = useState(false);
   return (
     <nav>
       <div className="brand-container">
