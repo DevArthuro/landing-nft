@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import scrollreveal from "scrollreveal";
 import Clients from "./components/Clients";
 import Footer from "./components/Footer";
 import Free from "./components/Free";
@@ -10,6 +12,20 @@ import Signup from "./components/Signup";
 import SuperRare from "./components/SuperRare";
 
 function App() {
+  useEffect(() => {
+    const registerAnimations = () => {
+      const sr = scrollreveal({
+        origin: "bottom",
+        distance: "80px",
+        duration: 2000,
+        reset: false,
+      });
+      sr.reveal(`.free,.clients,.super-rare,.releases,.like,.signup,footer`, {
+        interval: 500,
+      });
+    };
+    registerAnimations();
+  }, []);
   return (
     <div className="app-container">
       <div className="content-app">
