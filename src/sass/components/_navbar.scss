@@ -46,6 +46,70 @@ nav {
       }
     }
   }
+  @media (max-width: 800px) {
+    position: relative;
+    padding: 16px 32px;
+    width: 100%;
+    .brand-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      z-index: 12;
+      .brand {
+        img {
+          height: 1.5rem;
+        }
+      }
+      .toggle-container {
+        display: block;
+        color: var(--accent-color1);
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 16px;
+        z-index: 12;
+        .toggle {
+          z-index: 12;
+        }
+        .mode {
+          z-index: 12;
+        }
+      }
+    }
+    .links-container {
+      position: absolute;
+      top: 0;
+      right: 0;
+      opacity: 0;
+      visibility: hidden;
+      background-image: linear-gradient(
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0)
+        ),
+        linear-gradient(101deg, var(--pink), var(--orange));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 0;
+      transition: 0.5s ease-in-out;
+      height: 100vh;
+      z-index: 11;
+      .links {
+        flex-direction: column;
+        li:last-child {
+          display: none;
+        }
+      }
+    }
+    .nav-visible {
+      width: 100vw;
+      height: 100vh;
+      visibility: visible;
+      opacity: 1;
+      z-index: 11;
+      position: fixed;
+    }
+  }
 }
 
 [data-theme="light"] {
