@@ -370,6 +370,37 @@ nav .links-container .links li:last-of-type a {
 .free .cards .card2 .card-image img {
   width: 12rem;
 }
+@media (max-width: 800px) {
+  .free {
+    margin: 100px 0 0;
+  }
+  .free .container {
+    padding: 16px 32px;
+    height: 40vh;
+    border-radius: 0;
+  }
+  .free .container .background .pink {
+    left: -70%;
+  }
+  .free .container .background .green {
+    right: 90%;
+  }
+  .free .container .content {
+    padding: 0;
+    font-size: 1rem;
+    gap: 16px;
+  }
+  .free .container .content .title {
+    font-size: 1.6rem;
+  }
+  .free .cards {
+    right: 50%;
+  }
+  .free .cards .card1,
+  .free .cards .card2 {
+    zoom: 0.4;
+  }
+}
 .home {
   margin-top: 4.5rem;
 }
