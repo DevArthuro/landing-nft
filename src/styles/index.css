@@ -743,4 +743,24 @@ nav .links-container .links li:last-of-type a {
   display: flex;
   justify-content: space-evenly;
   gap: 16px;
+  overflow: auto;
+  justify-content: center;
+}
+.super-rare .cards::-webkit-scrollbar {
+  display: none;
+}
+.super-rare .cards .card {
+  zoom: 0.9;
+}
+@media (max-width: 1250px) {
+  .super-rare {
+    padding: 16px 32px;
+    width: 100vw;
+  }
+  .super-rare .cards {
+    justify-content: flex-start;
+  }
+  .super-rare .cards .card {
+    zoom: 0.7;
+  }
 }
