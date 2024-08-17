@@ -641,6 +641,37 @@ nav .links-container .links li:last-of-type a {
 .releases .green {
   background-color: var(--green);
 }
+@media (max-width: 800px) {
+  .releases {
+    margin: 0;
+    gap: 0;
+  }
+  .releases .release {
+    border-radius: 0;
+    grid-template-columns: 1fr;
+    padding: 16px 16px 0;
+  }
+  .releases .release:nth-child(1) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .releases .release .content {
+    padding: 16px;
+  }
+  .releases .release .image {
+    zoom: 0.5;
+    padding: 20px 0 0;
+  }
+  .releases .release .image .ellipse {
+    display: none;
+  }
+  .releases .release .card-container {
+    zoom: 0.5;
+  }
+  .releases .release .card-container .ellipse {
+    display: none;
+  }
+}
 .signup {
   padding-top: 64px;
   overflow: hidden;

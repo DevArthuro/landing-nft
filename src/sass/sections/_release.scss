@@ -87,4 +87,33 @@
   .green {
     background-color: var(--green);
   }
+  @media (max-width: 800px) {
+    margin: 0;
+    gap: 0;
+    .release {
+      border-radius: 0;
+      grid-template-columns: 1fr;
+      padding: 16px 16px 0;
+      &:nth-child(1) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .content {
+        padding: 16px;
+      }
+      .image {
+        zoom: 0.5;
+        padding: 20px 0 0;
+        .ellipse {
+          display: none;
+        }
+      }
+      .card-container {
+        zoom: 0.5;
+        .ellipse {
+          display: none;
+        }
+      }
+    }
+  }
 }
