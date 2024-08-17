@@ -23,4 +23,17 @@
       }
     }
   }
+  @media (max-width: 800px) {
+    margin: 5rem 0;
+    .container {
+      grid-template-columns: 1fr;
+      gap: 0;
+      .content {
+        border-radius: 0;
+        &:nth-child(2) {
+          background-color: var(--background);
+        }
+      }
+    }
+  }
 }
