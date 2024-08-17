@@ -9,4 +9,22 @@
       }
     }
   }
+  @media (max-width: 850px) {
+    padding: 16px;
+    .container {
+      .clients-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        :last-child {
+          grid-column: span 2;
+          justify-content: center;
+        }
+        .client {
+          img {
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
 }

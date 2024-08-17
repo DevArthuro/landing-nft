@@ -297,6 +297,22 @@ nav .links-container .links li:last-of-type a {
 .clients .container .clients-container .client {
   text-align: center;
 }
+@media (max-width: 850px) {
+  .clients {
+    padding: 16px;
+  }
+  .clients .container .clients-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .clients .container .clients-container :last-child {
+    grid-column: span 2;
+    justify-content: center;
+  }
+  .clients .container .clients-container .client img {
+    height: 30px;
+  }
+}
 .free {
   position: relative;
   margin: 5rem 0;
