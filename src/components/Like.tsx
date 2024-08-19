@@ -3,7 +3,7 @@ import eth2 from "../../public/eth2.png";
 
 const Like = () => {
   return (
-    <div className="like">
+    <div className="like" id="like">
       <div className="container">
         <div className="content">
           <div className="image">

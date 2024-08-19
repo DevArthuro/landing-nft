@@ -2,7 +2,7 @@ import signup from "../../public/signup.png";
 
 const Signup = () => {
   return (
-    <div className="signup">
+    <div className="signup" id="signup">
       <div className="container">
         <div className="content">
           <p className="sub-title">Launching soon</p>

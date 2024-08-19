@@ -78,4 +78,46 @@
       }
     }
   }
+  @media (max-width: 800px) {
+    padding: 16px;
+    font-size: 1rem;
+    margin-top: 50px;
+    .container {
+      position: relative;
+      grid-template-columns: 1fr;
+      place-content: center;
+      .content {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+      }
+      .image-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        img {
+          zoom: 0.7;
+          opacity: 0.4;
+        }
+        .ellipse-container {
+          .ellipse {
+            filter: blur(30px);
+            opacity: 0.4;
+          }
+          .pink {
+            right: 20%;
+          }
+          .orange {
+            left: 20%;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 670px) {
+    margin-top: 0;
+  }
 }

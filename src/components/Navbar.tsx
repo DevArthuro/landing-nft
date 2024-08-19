@@ -40,16 +40,24 @@ const Navbar: React.FC<Props> = ({ theme, changeTheme }) => {
       <div className={`links-container ${navState ? "nav-visible" : ""}`}>
         <ul className="links">
           <li>
-            <a href="#">Features</a>
+            <a href="#release" onClick={handleChange}>
+              Release
+            </a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#superRare" onClick={handleChange}>
+              Super Rare cards
+            </a>
           </li>
           <li>
-            <a href="#">Launch</a>
+            <a href="#like" onClick={handleChange}>
+              What is?
+            </a>
           </li>
           <li>
-            <a href="#">Sign Up</a>
+            <a href="#signup" onClick={handleChange}>
+              Sign Up
+            </a>
           </li>
           <li onClick={changeTheme} className="mode">
             {theme === "dark" ? (

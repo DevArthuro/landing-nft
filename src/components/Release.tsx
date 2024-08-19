@@ -5,7 +5,7 @@ import release2 from "../../public/release2.png";
 
 const Release = () => {
   return (
-    <div className="releases">
+    <div className="releases" id="release">
       {/*Release 1*/}
       <div className="release orange">
         <div className="content">
